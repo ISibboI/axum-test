@@ -1,19 +1,4 @@
-[package]
-name = "axum-test"
-version = "0.1.0"
-edition = "2021"
+[workspace]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-clap = { version = "4.0.27", features = ["derive"] }
-log = "0.4.17"
-simplelog = "0.12.0"
-tokio = { version = "1.22.0", features = ["macros"] }
-axum = "0.6.0-rc.5"
-sqlx = {version = "0.6.2", features = ["runtime-tokio-rustls", "postgres"]}
-axum-sessions = "0.3.1"
-biscuit-auth = "2.2.0"
-dotenvy = "0.15"
-serde = { version = "1.0.147", features = ["derive"] }
-sea-orm = { version = "0.10.4", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"] }
+members = ["webapi", "migration", "entity"]
+default-members = ["webapi"]

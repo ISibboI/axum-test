@@ -7,6 +7,6 @@ pub struct LoginUser {
     password: String,
 }
 
-pub async fn login_user(Json(payload): Json<LoginUser>) {
-
+pub async fn login_user(Json(_payload): Json<LoginUser>) {
+    todo!()
 }

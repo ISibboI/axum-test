@@ -1,0 +1,7 @@
+[package]
+name = "axum_test_entity"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sea-orm = "0.10.4"
